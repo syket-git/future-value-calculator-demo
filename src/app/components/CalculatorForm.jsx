@@ -24,7 +24,7 @@ const CalculatorForm = () => {
   }, [totalMoney, interestRate, years]);
 
   return (
-    <div className="text-black my-[100px] w-[700px] mx-auto">
+    <div className="text-black py-[100px] w-full px-10 md:w-[768px] mx-auto">
       <h3 className="text-center text-4xl font-bold">
         Future Value Calculator
       </h3>
@@ -34,7 +34,7 @@ const CalculatorForm = () => {
       </p>
 
       <div>
-        <div className="flex items-center justify-between space-x-2 mt-5">
+        <div className="flex flex-col sm:flex-row items-center justify-between sm:space-y-0 space-y-2 sm:space-x-2 mt-5">
           <InputField
             placeholder="Total money"
             value={totalMoney}

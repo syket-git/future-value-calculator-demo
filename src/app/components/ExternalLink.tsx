@@ -3,15 +3,19 @@ const ExternalLink = ({
   href,
   imageSrc,
   alt,
+  npm,
 }: {
   href: string;
   imageSrc: string;
   alt: string;
+  npm?: boolean;
 }) => {
   return (
     <a href={href} target="_blank">
       <img
-        className="w-[40px] h-[40px] rounded-full cursor-pointer"
+        className={`h-[30px] sm:h-[40px] ${
+          !npm && "w-[30px] sm:w-[40px] rounded-full"
+        } cursor-pointer`}
         src={imageSrc}
         alt={alt}
       />

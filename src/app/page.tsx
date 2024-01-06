@@ -3,7 +3,7 @@ import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <div className="bg-[#EEDFDE] h-screen">
+    <div className="bg-[#EEDFDE] min-h-screen">
       <Header />
       <CalculatorForm />
     </div>
